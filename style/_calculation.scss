@@ -1,0 +1,109 @@
+.calculation {
+    padding-top: 100px;
+    background-color: #F4F6F8;
+    ;
+}
+
+.calculation__title {
+    max-width: 724px;
+    padding-bottom: 42px;
+}
+
+.calculation__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 28px;
+    column-gap: 35px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #C2C2C2;
+    ;
+
+
+
+    .calculation__item {
+        background-color: #fff;
+        border-radius: 36px;
+        padding: 40px 0px 0px 46px;
+        height: 389px;
+        box-sizing: border-box;
+        position: relative;
+
+        &:hover {
+            background-image: url("/images/calculation/background-item.png");
+        }
+
+        .calculation__item-title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            max-width: 372px;
+            padding-bottom: 16px;
+        }
+
+        .calculation__item-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            max-width: 391px;
+            color: #666666;
+        }
+
+        .calculation__item-price {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 73px;
+            position: absolute;
+            padding-bottom: 36px;
+            bottom: 0px;
+
+        }
+
+    }
+}
+
+.total-price {
+    text-align: right;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 24px;
+    padding-bottom: 100px;
+    position: relative;
+
+
+    span {
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 73px;
+        padding-left: 53px;
+        padding-bottom: 14px;
+    }
+
+    .total-price_red {
+        padding-left: 70px;
+
+        color: #FA002C;
+    }
+
+    &::before {
+        content: "";
+        width: 24px;
+        height: 4px;
+        background: #FA002C;
+        border-radius: 1px;
+        position: absolute;
+        top: 69px;
+        left: 358px;
+    }
+    &::after {
+        content: "";
+        width: 24px;
+        height: 4px;
+        background: #FA002C;
+        border-radius: 1px;
+        position: absolute;
+        top: 142px;
+        left: 358px;
+    }
+}

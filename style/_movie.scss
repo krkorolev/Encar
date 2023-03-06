@@ -1,0 +1,38 @@
+.movie {
+    padding-bottom: 110px;
+    position: relative;
+
+    // &::after {
+    //     content: "";
+    //     background-image: url("/images/movie/background-movie.png");
+    //     position: absolute;
+    //     width: 1440px;
+    //     height: 547px;
+    //     top: 160px;
+    //     right: 191px;
+    // }
+}
+
+.movie__title {
+    padding-bottom: 20px;
+}
+
+.movie__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+    padding-bottom: 44px;
+}
+
+// .button__movie {
+//     width: 122px;
+//     height: 122px;
+//     border-radius: 50%;
+//     border: none;
+//     background-color: #fff;
+//     position: absolute;
+//     top: 373px;
+//     right: 832px;
+//     z-index: 3;
+// }

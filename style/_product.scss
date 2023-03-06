@@ -1,0 +1,143 @@
+.product__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    box-sizing: border-box;
+
+}
+
+.product__title {
+    padding-bottom: 32px;
+}
+
+.product__item-text {
+    padding: 0px 32px 0px;
+}
+
+.product__item {
+    width: 461px;
+    height: 764px;
+    background-color: #fff;
+    border-radius: 36px;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
+    // margin: 0 auto;
+}
+
+.product__item-img {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: auto;
+
+}
+
+.product__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    padding: 24px 0px 16px 0px;
+}
+
+.product__lists {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #C1C1C1;
+}
+
+.product__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+
+    & dt {
+        width: 70%;
+        margin: 0 0 8px 0;
+        padding: 0;
+        display: flex;
+        box-sizing: border-box;
+        align-items: flex-end;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            left: 0px;
+            bottom: .2em;
+            border-bottom: 1px dashed #C1C1C1;
+        }
+    }
+
+    & dd {
+        width: 30%;
+        display: flex;
+        box-sizing: border-box;
+        align-items: flex-end;
+        margin: 0 0 8px 0;
+        padding: 0 0 0 5px;
+    }
+}
+
+.product__price {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 16px;
+    padding-bottom: 56px;
+
+    & dt {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 5px;
+        max-width: 147px;
+    }
+
+    & dd {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+
+.product__price-korea {
+    box-sizing: border-box;
+    z-index: 3;
+    position: relative;
+
+    & dt {
+        color: #FA002C;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 220px;
+        height: 110px;
+        background-color: #FEE5E9;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        z-index: -5;
+        top: -19px;
+        left: -23px;
+    }
+}
+
+.link {
+    text-align: center;
+
+}
+
+.product__link {
+    padding: 23px 119px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
+
+}

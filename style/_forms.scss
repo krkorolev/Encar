@@ -1,0 +1,49 @@
+.forms {
+    padding-bottom: 110px;
+}
+.forms__wrap {
+    height: 533px;
+    background: #FFFFFF;
+    border: 7px solid #E7E7E7;
+    border-radius: 36px;
+    background-image: url("/images/forms/backgound-forms.png");
+    background-position: 31px 0px;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::after {
+        content: "";
+        background-image: url("/images/forms/backgound-forms-car.png");
+        position: absolute;
+        width: 831px;
+        height: 373px;
+        top: 198px;
+        left: 657px;
+    }
+
+    .forms__inner {
+        padding-left: 65px;
+    }
+
+    .forms__title {
+        padding: 63px 0px 24px;
+        max-width: 662px;
+
+        & span {
+            color: #FA002C;
+        }
+    }
+
+    .forms__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #292929;
+        max-width: 534px;
+        padding-bottom: 76px;
+    }
+
+    .forms__button {
+        padding: 26px 44px;
+    }
+}
